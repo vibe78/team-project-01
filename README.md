@@ -37,16 +37,16 @@ A spring and hibernate project for booking concert and event halls.
 
 
 
-### Team members ( collaborators )
+### Team members [ collaborators ]
 
-- (Dijayst)[https://github.com/dijayst]
+- [Dijayst](https://github.com/dijayst)
 
-- (Tea42day)[https://github.com/tea42day]
+- [Tea42day](https://github.com/tea42day)
 
-- (Vibe78)[https://github.com/vibe78]
+- [Vibe78](https://github.com/vibe78)
 
-- (Prosper Chuks)[https://github.com/ProsperChuks]
+- [Prosper Chuks](https://github.com/ProsperChuks)
 
-- (Jorbari)[https://github.com/Jorbari]
+- [Jorbari](https://github.com/Jorbari)
 
-- (Jeremiah)[https://github.com/spaceofmiah]
+- [Jeremiah](https://github.com/spaceofmiah)
