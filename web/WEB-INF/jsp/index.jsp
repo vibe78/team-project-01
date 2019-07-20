@@ -5,15 +5,42 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Welcome to Spring Web MVC project</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylsheet" href="${pageContext.request.contextPath}/assets/css/base.css" type="text/css" />
+        <title>Home | Concertio</title>
     </head>
 
     <body>
-        <p>Hello! This is the default welcome page for a Spring Web MVC project.</p>
-        <p><i>To display a different welcome page for this project, modify</i>
-            <tt>index.jsp</tt> <i>, or create your own welcome page then change
-                the redirection in</i> <tt>redirect.jsp</tt> <i>to point to the new
-                welcome page and also update the welcome-file setting in</i>
-            <tt>web.xml</tt>.</p>
-    </body>
+    <header>
+        <nav>
+            <h1 id="brand_name">c3rTio</h1>
+            <ul id="nav_list">
+                <li class="navList__item" id="btn_halls">
+                    <a href="">Halls</a>
+                </li>
+                <li class="navList__item" id="btn_trending">
+                    <a href="">Trending</a>
+                </li>
+                <li class="navList__item" id="btn_services">
+                    <a href="">Services</a>
+                </li>
+                <li class="navList__item" id="btn_sign_in">
+                    <a href="">Sign in</a>
+                </li>
+                <li class="navList__item" id="btn_sign_up">
+                    <a href="">Sign up</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <div>
+            <h1>Concertio</h1>
+            <p>The Right Space For Your Occasion</p>
+            
+            <div>
+                <input type="text" placeholder="Enter your desired event location" />
+            </div>
+        </div>
+    </header>
+</body>
 </html>

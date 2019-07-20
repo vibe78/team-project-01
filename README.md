@@ -37,7 +37,7 @@ A spring and hibernate project for booking concert and event halls.
 
 
 
-### Team members [ collaborators ]
+### Team members ( collaborators )
 
 - [Dijayst](https://github.com/dijayst)
 
