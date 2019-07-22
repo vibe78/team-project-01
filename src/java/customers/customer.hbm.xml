@@ -50,5 +50,6 @@ Contributor(s):
       <property name="mobile" column="mobile" type="string" />
       <property name="location" column="location" type="string" />
       <property name="password" column="pass_key" type="string" />
+      <property name="dateJoined" column="date_joined" type="date" />
   </class>
 </hibernate-mapping>

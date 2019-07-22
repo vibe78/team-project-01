@@ -1,16 +1,20 @@
 package customers;
 
+import java.io.Serializable;
+import java.util.Date;
+
 /**
  *
  * @author i-am-prinx
  */
-public class Customer {
+public class Customer implements Serializable {
     private int id;
     private String fullName;
     private String email;
     private String mobile;
     private String password;
     private String location;
+    private Date dateJoined;
     
     public Customer() {
     }
@@ -70,6 +74,14 @@ public class Customer {
 
     public void setLocation(String location) {
         this.location = location;
+    }
+
+    public Date getDateJoined() {
+        return dateJoined;
+    }
+
+    public void setDateJoined(Date dateJoined) {
+        this.dateJoined = dateJoined;
     }
     
     /**
@@ -131,6 +143,13 @@ public class Customer {
             ) return false;
         
         
+        // does dateJoined equals
+        if ( dateJoined != null ?
+                !dateJoined.equals(customer.dateJoined) :
+                customer.dateJoined != null
+            ) return false;
+        
+        
         // only if all data member compared tallies 
         return true;
     }
@@ -142,5 +161,14 @@ public class Customer {
         hash = 29 * hash + (password != null ? password.hashCode() : 0);
         hash = 29 * hash + (int) id;
         return hash;
+    }
+    
+    
+    /**
+     * returns a string representation of object
+     */
+    @Override
+    public String toString(){
+        return this.fullName;
     }
 }

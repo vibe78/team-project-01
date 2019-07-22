@@ -1,6 +1,9 @@
 
 package employees;
 
+import java.io.Serializable;
+import java.util.Date;
+
 /**
  *
  * @author i-am-prinx
@@ -12,6 +15,7 @@ public class Employee {
     private String mobile;
     private String password;
     private String location;
+    private Date dateJoined;
     
     public Employee() {
     }
@@ -71,6 +75,14 @@ public class Employee {
 
     public void setLocation(String location) {
         this.location = location;
+    }
+
+    public Date getDateJoined() {
+        return dateJoined;
+    }
+
+    public void setDateJoined(Date dateJoined) {
+        this.dateJoined = dateJoined;
     }
     
     /**
@@ -132,6 +144,13 @@ public class Employee {
             ) return false;
         
         
+        // does dateJoined equals
+        if ( dateJoined != null ?
+                !dateJoined.equals(employee.dateJoined) :
+                employee.dateJoined != null
+            ) return false;
+        
+        
         // only if all data member compared tallies 
         return true;
     }
@@ -143,5 +162,14 @@ public class Employee {
         hash = 29 * hash + (password != null ? password.hashCode() : 0);
         hash = 29 * hash + (int) id;
         return hash;
+    }
+    
+    
+    /**
+     * returns a string representation of object
+     */
+    @Override
+    public String toString(){
+        return this.fullName;
     }
 }
